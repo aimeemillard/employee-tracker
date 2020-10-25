@@ -16,12 +16,20 @@ class DB {
   // Find all employees except the given employee id
   findAllPossibleManagers(employeeId) {
     //TODO: complete the function
+    return this.connection.query("SELECT ");
   }
 
   // Create a new employee
-
+  createEmployee(employee) {
+    return this.connection.query("INSERT INTO employee SET ?", employee);
+  }
   // Remove an employee with the given id
-
+  deleteEmployee(employeeId) {
+    return this.connection.query(
+      "DELETE FORM employee WHERE id = ?",
+      employeeId
+    );
+  }
   // Update the given employee's role
 
   // Update the given employee's manager
@@ -51,7 +59,12 @@ class DB {
   }
 
   // Remove a department
-
+  deleteDepartment(departmentId) {
+    return this.connection.query(
+      "DELETE FORM  department WHERE id = ?",
+      departmentId
+    );
+  }
   // Find all employees in a given department, join with roles to display role titles
   findAllEmployeesByDepartment(departmentId) {
     return this.connection.query(
