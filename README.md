@@ -1,4 +1,4 @@
-
+![alt-text](https://github.com/aimeemillard/employee-tracker/blob/master/images/employee_tracker.gif)
 
 https://drive.google.com/file/d/104JYK3QAq_d7OpYUnmhiLzD-NpmRCZal/preview
 
